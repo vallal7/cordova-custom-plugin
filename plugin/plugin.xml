@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.ionic.Screen"
+    version="1.0.4">
+    <name>Screen</name>
+    <description>Native Screen Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>Ionic,, iOS</keywords>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+             <feature name="Screen">
+     			<param name="ios-package" value="Screen" onload="true" />
+  			</feature>
+            
+        </config-file>
+
+        <header-file src="src/ios/NativeViewController.h" />
+        <source-file src="src/ios/NativeViewController.m" />
+        <resource-file src="src/ios/NativeViewController.xib" />
+        <header-file src="src/ios/Screen.h" />
+        <source-file src="src/ios/Screen.m" />
+        
+    </platform>
+
+
+</plugin>
